@@ -5,8 +5,6 @@ if(ESP_PLATFORM)
    idf_component_register(
       SRCS "src/improv.cpp"
       INCLUDE_DIRS "src"
-      # TODO: It would be nice to have this conditional only if arduino is already used as a component
-      REQUIRES arduino
    )
    return()
 endif()
